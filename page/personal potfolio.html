@@ -1,0 +1,442 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>AP</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css"> 
+</head>
+<style>
+    *{
+    
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+      }
+     
+
+@font-face {
+      font-family: 'Plain';
+      src: url('../fonts/Plain-Regular.woff2') format('woff2'),
+          url('../fonts/Plain-Regular.woff') format('woff');
+      font-weight: normal;
+      font-style: normal;
+  }
+
+  @font-face {
+      font-family: 'Plain';
+      src: url('../fonts/Plain-Light.woff2') format('woff2'),
+          url('../fonts/Plain-Light.woff') format('woff');
+      font-weight: 300;
+      font-style: normal;
+  }
+
+  @font-face {
+      font-family: 'Plain';
+      src: url('../fonts/Plain-Bold.woff2') format('woff2'),
+          url('../fonts/Plain-Bold.woff') format('woff');
+      font-weight: bold;
+      font-style: normal;
+  }
+li,a,button{
+    font-family: "Monsterrat",sans-serif;
+    font-weight: 500;
+    font-size: 28px;
+    color: whitesmoke;
+    text-decoration: none;
+}
+header{
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+    padding: 2px 10%;
+}
+.logo{
+    cursor: pointer;
+    margin-right: auto;
+    text-decoration: dotted;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+}
+.navlinks{
+    list-style: none;
+}
+.navlinks li{
+    display: inline-block;
+    padding: 50px 60px;
+    
+}
+
+
+.navlinks li a:hover{
+    color: rgb(0, 0, 0);
+    
+}
+button{
+    padding: 9px 25px;
+    background-color: rgb(0, 0, 0);
+    border: none;
+    border-radius: 50px;
+    cursor: pointer;
+    transition: all 8.3s ease 0s;
+}
+button:hover{
+    background-color: rgb(255, 255, 255);
+
+}
+.navbar{
+    position: fixed;
+    width: 100%;
+    z-index: 999;
+    padding: 1px 0;
+    
+}
+.heading{
+    font-family: 'Courier New', Courier, monospace;
+    font-size: larger;
+    align-items: center;
+    position: absolute;
+    top: 20%;
+    left: 20%;
+    right:70%;
+    bottom: 50%;
+}
+h2{
+    color:whitesmoke;
+    cursor:pointer;
+}
+h2:hover{
+    border-right-color: black;
+}
+.text-1{
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    color: rgb(0, 0, 0);
+    
+}
+.text-2{
+color: rgb(255, 255, 255);
+}
+.background{
+    background-image: url(./jpg/Wait\,\ Alena\ Aenami.png);
+    background-size: cover;
+    background-repeat: no-repeat;
+    height: 100vh;
+}
+.class-thumb{
+width: 25%;
+float: left;
+padding: 10px;
+}
+.img-fluid{
+    width: 100%;
+    height:200px ;
+}
+.h{
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    align-items: center;
+    color: #e6320a;
+}
+
+
+
+
+
+.about {
+    /*background: var(--about-bg-color);*/
+    background-color: #000000;
+
+  }
+
+
+  .team-info {
+    background: var(--white-color);
+    border-radius: 0 0 2px 2px;
+    box-shadow: 6px 0 38px rgba(20,20,20,0.10);
+    padding: 20px;
+    position: relative;
+  }
+
+  .team-info span {
+    font-weight: var(--font-weight-light);
+    opacity: 0.85;
+  }
+
+  .team-info .social-icon {
+    position: absolute;
+    top: 10px;
+    right: 20px;
+  }
+
+  .team-info .social-icon li {
+    display: block;
+  }
+
+
+  body{
+ font-family: arial;
+}
+.card{
+     width: 20%;
+     display: inline-block;
+     box-shadow: 2px 2px 20px black;
+     border-radius: 5px; 
+     margin: 2%;
+    }
+
+.image img{
+  width: 100%;
+  border-top-right-radius: 5px;
+  border-top-left-radius: 5px;
+  
+
+ 
+ }
+
+.title{
+ 
+  text-align: center;
+  padding: 10px;
+  
+ }
+
+h1{
+  font-size: 20px;
+ }
+
+.des{
+  padding: 3px;
+  text-align: center;
+ 
+  padding-top: 10px;
+        border-bottom-right-radius: 5px;
+  border-bottom-left-radius: 5px;
+}
+button{
+  margin-top: 40px;
+  margin-bottom: 10px;
+  color: #000000;
+  background-color: white;
+  border: 1px solid black;
+  border-radius: 5px;
+  padding:10px;
+}
+button:hover{
+  background-color: rgb(255, 255, 255);
+  color: rgb(0, 0, 0);
+  transition: .5s;
+  cursor: pointer;
+}
+.buttonb{
+    color: aliceblue;
+    background-image: linear-gradient(rgb(253, 103, 2),rgb(237, 0, 166));
+    
+}
+.icons {
+    text-decoration: none;
+    float:left;
+    color: #fff;
+    padding-left: 14px;
+    padding-top: 5px;
+    align-items: baseline;
+} 
+.fa {  
+  padding: 10px;   
+  margin: 5px 2px;  
+  font-size: 20px;  
+  width: 30px;  
+}  
+.fa-facebook { 
+  align-items: center;
+    font-size: 0.95em;
+  color: #3B5998;  
+}  
+
+.fa-instagram {  
+    font-size: 0.95em;
+    background-color: radial-gradient(circle farthest-corner at 35% 90%, #fec564, transparent 50%), radial-gradient(circle farthest-corner at 0 140%, #fec564, transparent 50%), radial-gradient(ellipse farthest-corner at 0 -25%, #5258cf, transparent 50%), radial-gradient(ellipse farthest-corner at 20% -50%, #5258cf, transparent 50%), radial-gradient(ellipse farthest-corner at 100% 0, #893dc2, transparent 50%), radial-gradient(ellipse farthest-corner at 60% -20%, #893dc2, transparent 50%), radial-gradient(ellipse farthest-corner at 100% 100%, #d9317a, transparent), linear-gradient(#6559ca, #bc318f 30%, #e33f5f 50%, #f77638 70%, #fec66d 100%);
+  }
+
+ 
+.fa:hover {  
+    opacity: 0.8;  
+}  
+.social-icon li {
+    display: inline-block;
+    list-style: none;
+  }
+
+
+
+
+</style>
+<body>
+    
+       <!--nav bar-->
+<div class="navbar">
+    <header>
+        <a class="logo" href="#">
+            <h1 class="logo">AP</h1> 
+        </a>
+        <nav>
+            <ul class="navlinks">
+                <li><a href="#home">Home</a></li>
+                <li><a href="#achivements">Achivements</a></li>
+                <li><a href="#about">About Me</a></li>
+            </ul>
+        </nav>
+        <a href="./login.html"><button>login</button></a>
+    </div>
+</header>
+
+<div class="background"></div>
+
+<div class="heading" id="home">
+        <h2> 
+            <span class="text-1">welcome to,</span>
+            <br>
+            <span class="text-2">My WORLD,THIS IS ASHUTOSH POUDEL.</span>
+        </h2>
+    </div>
+
+<!--Achivements-->
+<section id="achivements" style="background-color: gray";>
+ <div class="card"  >
+
+    <div class="image">
+       <img src="./jpg/870_brihaspati_vidyasadan1621416115.jpg">
+    </div>
+    <div class="title">
+    <h1>Brihaspati Vidyasadan</h1>
+    </div>
+    <div class="des">
+     <p> Schooling <br> (2007-2018) </p>
+    </div>
+    </div>
+    <!--cards -->
+    
+    
+    <div class="card">
+    
+    <div class="image">
+       <img src="./jpg/2022-02-28.jpg">
+    </div>
+    <div class="title">
+     <h1>
+    Xavier International Collage</h1>
+    </div>
+    <div class="des">
+     <p> High school<br>Science<br>(2018-2021) </p>
+    </div>
+    </div>
+    <!--cards -->
+    
+    
+    <div class="card">
+    
+    <div class="image">
+       <img src="./jpg/NCIT-building.webp">
+    </div>
+    <div class="title">
+     <h1>
+    National Collage Of IT</h1>
+    </div>
+    <div class="des">
+     <p>Bachelor <br>Software Engineering<br>(2021-cont...) </p>
+    </div>
+    </div>
+    <!--cards -->
+    
+    
+    <div class="card">
+    
+    <div class="image">
+       <img src="./jpg/download.png">
+    </div>
+    <div class="title">
+     <h1>
+    Nepali Youth Fitness Academy</h1>
+    </div>
+    <div class="des">
+     <p>Personal GYM Trainer Course<br>2022</p>
+    </div>
+    </div>
+    </section>
+    <!--cards -->
+    <section style="background-color: rgb(255, 17, 4);" id="about">
+    <div class="card">
+    
+    <div class="image">
+       <img src="./jpg/IMG_0027.JPG">
+    </div>
+    <div class="title">
+     <h1>
+        Football Lover</h1>
+    </div>
+    <div class="des">
+     <p>HALA MADRID!!<br>(Cristino Ronaldo)<br>Played For School and Collage Team </p>
+    </div>
+    </div>
+    <!--cards -->
+    
+    <div class="card">
+    
+    <div class="image">
+       <img src="./jpg/IMG_4346.JPG">
+    </div>
+    <div class="title">
+     <h1>
+    Traveller</h1>
+    </div>
+    <div class="des">
+     <p>Nature Lover<br>Been TO: Ghale Gau , Langtang , Rara ,Mustang ,Gosaikunda ,Manang</p>
+    
+    </div>
+    </div>
+    <!--cards -->
+    
+    
+    <div class="card">
+    
+    <div class="image">
+       <img src="./jpg/photo-1526506118085-60ce8714f8c5.jpg">
+    </div>
+    <div class="title">
+     <h1>
+    Fitness Lover</h1>
+    </div>
+    <div class="des">
+     <p>Workout Or Getout<br>Personal Trainer(NYFA Certified)</p>
+    </div>
+    </div>
+    <!--cards -->
+    
+    
+    <div class="card">
+    
+    <div class="image">
+       <img src="./jpg/_MG_2809.jpg">
+    </div>
+    <div class="title">
+     <h1>
+    YOU CAN FING ME AT</h1>
+    </div>
+    <div class="des">
+        <div class="icon"><center>
+              
+              <a href="https://www.facebook.com/nepali.a.poudel/" class="fa fa-facebook" style="font-size:24px; color: #3B5998;"> </a>     
+              <a href="https://www.instagram.com/ashutosh_poudel" class="fa fa-instagram" style="font-size:24px; "> </a>  
+              <a href="https://github.com/Ashutosh9938" class="fa fa-github" style="font-size:24px; color:black;"> </a>  
+              <a href="https://github.com/Ashutosh9938" class="fa fa-spotify" style="font-size:24px; color:rgb(2, 248, 19);"> </a> 
+            </ul>
+            </div>
+          </center>
+    </div>
+    </div>
+    </div>
+</section>
+
+
+
+  
+</body>
+    </html>
